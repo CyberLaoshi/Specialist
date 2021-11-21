@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>React JS1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app"></div>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script src="js/data.js"></script>
+<script type="text/babel" src="js/App.js"></script>
+<script type="text/babel" src="js/Button.js"></script>
+<script type="text/babel" src="js/Footer.js"></script>
+<script type="text/babel" src="js/Book.js"></script>
+<script type="text/babel" src="js/Timer.js"></script>
+<script type="text/babel" src="js/Clock.js"></script>
+//<script type="text/babel" src="js/Form.js"></script>
+<script type="text/babel" src="js/BookWithoutPrice.js"></script>
+<script type="text/babel" src="js/SearchForm.js"></script>
+<script type="text/babel" src="js/AddBookForm.js"></script>
+<script type="text/babel" src="js/Basket.js"></script>
+<script type="text/babel">
+
+dataBook[10] = {id: 12, title: 'React Быстро', author: 'Мардан Азат', price: null}
+
+ReactDOM.render(
+        
+  <App dataBook={dataBook}/>
+  , 
+  document.querySelector("#app")
+
+);
+
+</script>
+
+
+</body>
+</html>
